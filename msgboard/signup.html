@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="stylessign.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-container">
+        <h1>Create your account</h1>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="new-username">Username</label>
+                <input type="text" id="new-username" placeholder="Please enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail Address</label>
+                <div class="email-wrapper">
+                    <input type="text" id="email" placeholder="Please enter your e-mail address" required>
+                    <label for="email-domain"></label><select id="email-domain">
+                        <!-- default mail list, can add options -->
+                    <option value="@gmail.com">@gmail.com</option>
+                    <option value="@outlook.com">@outlook.com</option>
+                    <option value="@edu.ac.uk">@edu.ac.uk</option>
+                    <option value="@yeah.com">@yeah.com</option>
+
+                </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="new-password">Password</label>
+                <input type="password" id="new-password" placeholder="Please enter your password" onkeyup="checkPasswordStrength()" required>
+                <div id="password-strength"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Please enter your password again" required>
+            </div>
+            <button type="submit" id="register-button">Sign-up</button>
+        </form>
+        <p>Already have an account?<a href="signin.html" id="login-link">Sign-in</a></p>
+    </div>
+</div>
+
+<script src="scriptmsg.js"></script>
+<script src="form.js"></script>
+</body>
+</html>

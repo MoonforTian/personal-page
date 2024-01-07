@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="messages">
+    <h1>message border</h1>
+    <div class="form">
+        <input type="text" id="username" placeholder="surname">
+        <textarea placeholder="comment" id="message"></textarea>
+        <button id="submitBtn">comment</button>
+    </div>
+
+    <div id="messageBoard">
+        <div class="message">
+            <div class="message-info">
+                <div class="info">
+
+                    <strong>guest</strong>
+                </div>
+                <span id="initialTime"></span>
+            </div>
+            <div class="content">
+                hi, nice to see you
+            </div>
+        </div>
+    </div>
+</div>
+<div id="weather">
+    <!-- shows the weather of my location -->
+</div>
+<script src="../server/script.js"></script>
+<script src="messages_re.js"></script>
+</body>
+</html>

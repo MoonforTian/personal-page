@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+    <link rel="stylesheet" href="stylessign.css">
+</head>
+<body>
+<div class="container">
+    <div class="form-container">
+        <h1>Message Board</h1>
+
+        <form id="login-form" action="comment.html" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Please enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Please enter password" required>
+            </div>
+            <div class="form-group">
+                <label for="captcha-input">Vertification</label>
+                <div class="captcha">
+                    <input type="text" id="captcha-input" name="captcha" placeholder="Vertification code" required>
+                    <div id="captcha" class="captcha-code">7uNF</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <button type="submit" id="login-button">Sign-in</button>
+        </form>
+
+        <p>Do not have an account? <a href="signup.html" id="register-link">Sign-up</a></p>
+    </div>
+</div>
+
+<script src="scriptmsg.js"></script>
+</body>
+</html>
